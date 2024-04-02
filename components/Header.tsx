@@ -34,7 +34,7 @@ function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-10 bg-white/30 bg-opacity-20 backdrop-blur-lg dark:bg-black/30">
       <div className="flex h-14 items-center justify-between px-4 md:px-6">
-        <Link href="#" className="flex items-center justify-center">
+        <Link href="#home" className="flex items-center justify-center">
           <CodeIcon className="h-6 w-6" />
           <span className="sr-only">Sriram Balaji</span>
         </Link>
@@ -50,12 +50,6 @@ function Header() {
         {/* Navigation Menu */}
         <div className="hidden md:flex md:w-auto md:items-center">
           <nav className="flex gap-4 lg:gap-6">
-            <Link
-              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
-              href="#"
-            >
-              Home
-            </Link>
             <Link
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
               href="#about"
@@ -97,6 +91,20 @@ function Header() {
             >
               Speaking <ExternalLinkIcon className="ml-1 h-4 w-4" />
             </a>
+            <a
+              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
+              target="_blank"
+              href="https://youtu.be/7ES2rk5pu8o"
+            >
+              DevConnect Show<ExternalLinkIcon className="ml-1 h-4 w-4" />
+            </a>
+            <Link
+              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
+              href="./journey"
+            >
+              My Journey
+            </Link>
+
             <Link
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
               href="#contact"
@@ -114,14 +122,7 @@ function Header() {
           className="absolute left-0 top-full w-full bg-white md:hidden dark:bg-black"
         >
           <div className="flex flex-col gap-4 p-4">
-            <Link
-              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
-              href="#projects"
-              onClick={toggleMenu}
-            >
-              Projects
-            </Link>
-            <Link
+          <Link
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
               href="#about"
               onClick={toggleMenu}
@@ -130,14 +131,15 @@ function Header() {
             </Link>
             <Link
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
-              href="#skills"
+              href="#projects"
               onClick={toggleMenu}
             >
-              Skills
+              My Tools
             </Link>
+           
             <a
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
-              href="https://blog.example.com"
+              href="https://blog.srirambalaji.com"
               target="_blank"
               onClick={toggleMenu}
             >
@@ -146,11 +148,35 @@ function Header() {
             <a
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
               target="_blank"
-              href="https://newsletter.example.com"
+              href="https://ageofcopilots.substack.com"
               onClick={toggleMenu}
             >
               Newsletter <ExternalLinkIcon className="ml-1 h-4 w-4" />
             </a>
+            <a
+              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
+              target="_blank"
+              href="https://ageofcopilots.substack.com"
+              onClick={toggleMenu}
+            >
+              Videos <ExternalLinkIcon className="ml-1 h-4 w-4" />
+            </a>
+            <a
+              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
+              target="_blank"
+              href="https://ageofcopilots.substack.com"
+              onClick={toggleMenu}
+            >
+              Speaking <ExternalLinkIcon className="ml-1 h-4 w-4" />
+            </a>
+            <Link
+              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
+              href="#skills"
+              onClick={toggleMenu}
+            >
+              Skills
+            </Link>
+           
             <Link
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
               href="#contact"
