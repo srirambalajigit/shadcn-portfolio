@@ -4,6 +4,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import MotionWrap from "@/components/MotionWrap";
+import { LinkedinIcon } from "lucide-react";
 
 function Contact() {
   return (
@@ -21,7 +22,15 @@ function Contact() {
               Have a question or want to work together? Send me a message using
               the form below.
             </p>
-          </div>
+            <p  className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Here are my socials:
+            </p>
+            <Button className="bg-blue-500 hover:bg-blue-600">
+              <a href={"https://www.linkedin.com/in/srirambalaji"}>
+              <LinkedinIcon className="w-4 h-4 dark:text-gray-900 text-white" />
+              </a>
+            </Button>
+            </div>
           <div className="grid gap-4">
             <form className="grid gap-4">
               <div className="grid gap-2">
