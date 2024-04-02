@@ -32,7 +32,7 @@ function ProjectCard({
           </p>
         </div>
       </CardContent>
-      <CardFooter className="flex items-center p-4 md:p-6">
+      {/* <CardFooter className="flex items-center p-4 md:p-6">
         <Link
           className={buttonVariants({
             variant: "outline",
@@ -42,7 +42,7 @@ function ProjectCard({
         >
           View
         </Link>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   );
 }
