@@ -156,7 +156,7 @@ function Header() {
             <a
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
               target="_blank"
-              href="https://ageofcopilots.substack.com"
+              href="https://www.youtube.com/@sriram.balaji"
               onClick={toggleMenu}
             >
               Videos <ExternalLinkIcon className="ml-1 h-4 w-4" />
@@ -164,19 +164,27 @@ function Header() {
             <a
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
               target="_blank"
-              href="https://ageofcopilots.substack.com"
+              href="https://www.powerplatformbootcamp.com/2024/location-detail/?id=319439e4-ae7f-ee11-a81c-6045bd5d6a14&city=Hungary+Power+Platform+User+Group"
               onClick={toggleMenu}
             >
               Speaking <ExternalLinkIcon className="ml-1 h-4 w-4" />
             </a>
-            <Link
+            <a
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
-              href="#skills"
+              target="_blank"
+              href="https://youtu.be/7ES2rk5pu8o"
               onClick={toggleMenu}
             >
-              Skills
-            </Link>
-           
+              DevConnect Show <ExternalLinkIcon className="ml-1 h-4 w-4" />
+            </a>
+            <a
+              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
+              target="_blank"
+              href="https://humble-space-disco-4w54pxw7qppfq5wp-3000.app.github.dev/journey"
+              onClick={toggleMenu}
+            >
+              My Journey <ExternalLinkIcon className="ml-1 h-4 w-4" />
+            </a>
             <Link
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
               href="#contact"
