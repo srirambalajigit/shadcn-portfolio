@@ -67,7 +67,7 @@ function Header() {
               className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
               href="#projects"
             >
-              Tools
+              My Tools
             </Link>
             <a
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
@@ -82,6 +82,20 @@ function Header() {
               href="https://ageofcopilots.substack.com"
             >
               Newsletter <ExternalLinkIcon className="ml-1 h-4 w-4" />
+            </a>
+            <a
+              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
+              target="_blank"
+              href="https://www.youtube.com/@sriram.balaji"
+            >
+              Videos <ExternalLinkIcon className="ml-1 h-4 w-4" />
+            </a>
+            <a
+              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
+              target="_blank"
+              href="https://www.powerplatformbootcamp.com/2024/location-detail/?id=319439e4-ae7f-ee11-a81c-6045bd5d6a14&city=Hungary+Power+Platform+User+Group"
+            >
+              Speaking <ExternalLinkIcon className="ml-1 h-4 w-4" />
             </a>
             <Link
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
