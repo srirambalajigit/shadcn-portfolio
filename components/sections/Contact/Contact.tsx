@@ -1,10 +1,13 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import MotionWrap from "@/components/MotionWrap";
-import { LinkedinIcon } from "lucide-react";
+
+import {
+  YoutubeIcon,
+  GithubIcon,
+  LinkedinIcon,
+} from "lucide-react";
+import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
@@ -22,40 +25,26 @@ function Contact() {
               Have a question or want to work together? Send me a message using
               the form below.
             </p>
-            <p  className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Here are my socials:
-            </p>
-            <Button className="bg-blue-500 hover:bg-blue-600">
-              <a href={"https://www.linkedin.com/in/srirambalaji"}>
-              <LinkedinIcon className="w-4 h-4 dark:text-gray-900 text-white" />
-              </a>
-            </Button>
+            <div className="flex space-x-1">
+              <Button variant="outline" size="icon" asChild>
+                <a target="_blank" href="https://youtube.com/@sriram.balaji">
+                  <YoutubeIcon className="h-4 w-4" />
+                </a>
+              </Button>
+              <Button variant="outline" size="icon" asChild>
+                <a target="_blank" href="https://github.com/srirambalajigit">
+                  <GithubIcon className="h-4 w-4" />
+                </a>
+              </Button>
+              <Button variant="outline" size="icon" asChild>
+                <a target="_blank" href="https://linkedin.com/in/srirambalaji">
+                  <LinkedinIcon className="h-4 w-4" />
+                </a>
+              </Button>
             </div>
+          </div>
           <div className="grid gap-4">
-            <form className="grid gap-4">
-              <div className="grid gap-2">
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="Enter your name" required />
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  placeholder="Enter your email"
-                  required
-                  type="email"
-                />
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="message">Message</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Enter your message"
-                  required
-                />
-              </div>
-              <Button type="submit">Submit</Button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>
