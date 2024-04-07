@@ -100,7 +100,7 @@ function Header() {
             </a>
             <Link
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
-              href="./journey"
+              href="/journey"
             >
               My Journey
             </Link>
