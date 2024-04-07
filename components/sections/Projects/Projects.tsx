@@ -27,7 +27,7 @@ function Projects() {
             <p className="text-gray-500 dark:text-gray-400">
               Here are some of my featured tools that I created.
             </p>
-            <p className="md:hidden">
+            <p className="md:hidden text-gray-500 dark:text-gray-400">
               P.S: Swipe left or right to navigate 😊
             </p>
           </div>
