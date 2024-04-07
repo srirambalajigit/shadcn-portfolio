@@ -180,7 +180,7 @@ function Header() {
             <a
               className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
               target="_blank"
-              href="https://humble-space-disco-4w54pxw7qppfq5wp-3000.app.github.dev/journey"
+              href="/journey"
               onClick={toggleMenu}
             >
               My Journey <ExternalLinkIcon className="ml-1 h-4 w-4" />
