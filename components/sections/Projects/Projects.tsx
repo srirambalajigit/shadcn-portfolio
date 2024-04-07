@@ -39,7 +39,7 @@ function Projects() {
               className="w-full"
             >
               <CarouselContent>
-                <CarouselItem className="md:basis-1/2 lg:basis-full	xl:basis-1/2">
+                <CarouselItem className="md:basis-full">
                   <div className="p-1">
                     <ProjectCard
                       thumbnail={"https://www.youtube.com/embed/1qrdRJqjGaY"}
@@ -48,7 +48,7 @@ function Projects() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-full	xl:basis-1/2">
+                <CarouselItem className="md:basis-full">
                   <div className="p-1">
                     <ProjectCard
                       thumbnail={"https://www.youtube.com/embed/xiWEX-AvlAk"}
@@ -57,17 +57,16 @@ function Projects() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-full	xl:basis-1/2">
+                <CarouselItem className="md:basis-full">
                   <div className="p-1">
                     <ProjectCard
                       thumbnail={"https://www.youtube.com/embed/lz2teCAlWog"}
                       title={`Power Platform Tester Copilot`}
-                      description={`Power Platform Tester Copilot is a  tool I built to assist Power Platform Testers. It helps testers to generate manual test cases for a user story, automated testing using EasyRepro and FakeXrmEasy. It also helps in generating fictitious test data based on the requirement.
-                        `}
+                      description={`Power Platform Tester Copilot is a  tool I built to assist Power Platform Testers. It helps testers to generate manual test cases for a user story, automated testing using EasyRepro and FakeXrmEasy. It also helps in generating fictitious test data based on the requirement.`}
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-full	xl:basis-1/2">
+                <CarouselItem className="md:basis-full">
                   <div className="p-1">
                     <ProjectCard
                       thumbnail={"https://www.youtube.com/embed/kR72CRaBchI"}
@@ -77,7 +76,7 @@ function Projects() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-full	xl:basis-1/2">
+                <CarouselItem className="md:basis-full">
                   <div className="p-1">
                     <ProjectCard
                       thumbnail={"https://www.youtube.com/embed/VVzhWxz58Bw"}
@@ -87,7 +86,7 @@ function Projects() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-full	xl:basis-1/2">
+                <CarouselItem className="md:basis-full">
                   <div className="p-1">
                     <ProjectCard
                       thumbnail={"https://www.youtube.com/embed/HQEWH5_IJ4o"}
@@ -97,7 +96,7 @@ function Projects() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-full	xl:basis-1/2">
+                <CarouselItem className="md:basis-full">
                   <div className="p-1">
                     <ProjectCard
                       thumbnail={"https://www.youtube.com/embed/wQd-8x_ncz0"}
@@ -107,7 +106,7 @@ function Projects() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-full	xl:basis-1/2">
+                <CarouselItem className="md:basis-full">
                   <div className="p-1">
                     <ProjectCard
                       thumbnail={"https://www.youtube.com/embed/pNpba06sLhg"}
@@ -117,7 +116,7 @@ function Projects() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-full	xl:basis-1/2">
+                <CarouselItem className="md:basis-full">
                   <div className="p-1">
                     <ProjectCard
                       thumbnail={"https://www.youtube.com/embed/ynpvw37yzkc"}
