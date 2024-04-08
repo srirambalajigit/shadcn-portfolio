@@ -1,6 +1,6 @@
 'use server';
 import { Resend } from 'resend';
-import { ContactTemplate } from '@/components/email/contact-template';
+import { ContactEmail } from '@/components/emails/contact-template';
 
 import { z } from "zod";
 
@@ -23,39 +23,38 @@ const contactFormSchema = z.object({
   message: z.string().max(380).min(4),
 })
 
-export async function contactSubmit(prevState: any, formData: FormData) {
-  const name = formData.get('name');
-  const email = formData.get('email');
-  const message = formData.get('message')
+const FROM_EMAIL = 'contact@srirambalaji.com';
+const TO_EMAIL = 'srirambalajiandr@gmail.com';
 
+export async function contactSubmit(prevState: any, formData: FormData) {
   const validatedFields = contactFormSchema.safeParse({
-    name,
-    email,
-    message
+    name: formData.get('name'),
+    email: formData.get('email'),
+    message: formData.get('message')
   })
 
   if (!validatedFields.success) {
     return {
       errors: validatedFields.error.flatten().fieldErrors,
-      message: 'Form validation failed, please check and try again!'
-    }
-  }
+      message: 'Please check your entries and try again.'
+    };
+  }  
 
+  const { name, email, message } = validatedFields.data;
   const { data: res, error } = await resend.emails.send({
-    from: 'contact@srirambalaji.com',
-    to: 'srirambalajiandr@gmail.com',
-    subject: 'Contact Form',
-    react: ContactTemplate({ name, email, message }),
-    text: message
+    from: FROM_EMAIL,
+    to: TO_EMAIL,
+    subject: `Message from ${name} on Portfolio`,
+    react: ContactEmail({ name, email, message })
   });
 
   if (error) {
     return {
-      message: 'Something went wrong! Please try again later'
+      message: 'Oops! Something went wrong. Please try again later.'
     };
-  }
+  }  
 
   return {
-    message: 'Your contact request has been submitted'
-  };
+    message: 'Thank you for reaching out! Your message has been sent.'
+  };  
 }
