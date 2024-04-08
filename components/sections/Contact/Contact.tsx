@@ -22,8 +22,8 @@ function Contact() {
               Contact Me
             </h2>
             <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Have a question or want to work together? Send me a message using
-              the form below.
+              Have a question? Send me a message using
+              the form.
             </p>
             <div className="flex space-x-1">
               <Button variant="outline" size="icon" asChild>
