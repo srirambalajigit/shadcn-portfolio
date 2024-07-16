@@ -16,7 +16,7 @@ function Hero() {
             Hi, I&apos;m Sriram Balaji.  
           </h1>
           <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-           I am passionate about Power Platform and Dynamics 365. Lately I have been tinkering with Microsoft Copilots.
+           I am passionate about Power Platform and Dynamics 365. Lately I have been tinkering with Microsoft Copilots.I am honored to be a Microsoft Business Applications MVP.
 
           </p>
 

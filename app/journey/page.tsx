@@ -60,7 +60,10 @@ const dummyContent = [
 
         </p>
         <p>
-        Started working with Power Platform in 2019 and working on it ever since. 
+        Started working with Power Platform in 2019 and working on it ever since.Lately I am playing with custom Copilots using Copilot Studio and OpenAI GPTs.Have released multiple videos and tools on the same. I was awarded Microsoft Business Applications MVP by Microsoft on July 2024. 
+        </p>
+
+        <p>
         You can also check out the DevConnect Show with Danish Naglekar video here which talks about my journey.
 
         </p>

@@ -9,7 +9,7 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sriram Balaji",
+  title: "Sriram Balaji | Microsoft MVP",
   description: "Sriram Balaji's website",
 };
 
